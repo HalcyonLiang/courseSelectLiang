@@ -1,0 +1,12 @@
+#footer{
+    line-height: 5px;
+    font-size:13px;
+    margin: 3px auto 20px;
+    width:100%;
+    height:auto;
+    color:#999999;
+    text-align:center;
+    padding-top: 14px;
+    /*border-top:1px solid #CCCCCC;*/
+    clear: both;
+}

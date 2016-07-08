@@ -1,0 +1,22 @@
+#changepic{
+	color:#626262;
+	font-size:12px;
+}
+#message{
+	font-size:13px;
+}
+.error{
+	font-size:12px;
+	color:red;
+}
+.loginbutton{
+	color: #fff;
+	font-weight: bold;
+	font-size: 13px;
+	text-align: center;
+	padding: .17em 0 .2em .17em;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #9cf #159 #159 #9cf;
+	background: #69c url(img/bg-btn-blue.gif) repeat-x;
+}

@@ -1,0 +1,85 @@
+#content {
+	background-color: #FFFFFF;
+	margin:0 200px;
+	width:800px;
+	border-style:none solid;
+	border-width:thin;
+	border-color: #999999;
+	height:auto;
+}
+span.keyword_mark {
+	color: OrangeRed; 
+}
+body{
+background:url(../img/bg.jpg);
+text-align: center;
+padding:0px;margin:0px;
+    width:100%;height:100%;
+}
+div.By {
+background-color:#e5eecc;
+padding:0 20px;
+border:3px inset;
+}
+
+@font-face {
+    font-family : "MS Mincho";
+    /*src : url("../fonts/MS Mincho.TTF") format('truetype');*/
+    src:local(MS-Mincho);
+}
+
+
+h1 span {color: #000000}
+#player {
+margin:0 100px 10px 100px;
+}
+
+
+#subToggle{
+    font-family:"MS Mincho" ;
+}
+
+#sub {
+    font-family:"MS Mincho" ;
+    font-size: 16px;
+}
+#sub p span {
+font-size:20px;
+color:#FF3300;
+}
+#control {
+    align-content: center;
+    border-left:1px solid #267aff;
+    border-right:1px solid #267aff;
+    padding: 0px 10px;
+    /*padding-left:20px;*/
+}
+
+#container{
+
+}
+#blocker{
+    display:none;
+    position:relative;
+    left:0px;top:-60px;
+    width:640px;
+    height:60px;
+    background:#000;
+    z-index:100;
+    border-bottom:3px solid #000;
+    border-radius:3%;
+}
+
+
+#footer{
+    line-height: 5px;
+    font-size:13px;
+    margin: 3px auto 20px;
+    width:100%;
+    height:auto;
+    color:#999999;
+    text-align:center;
+    padding-top: 14px;
+    /*border-top:1px solid #CCCCCC;*/
+    clear: both;
+}

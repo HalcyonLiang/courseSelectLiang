@@ -1,0 +1,76 @@
+
+body{
+	color: #000;
+	font-family: omnes-pro, arial, sans-serif;
+	font-size: 62.5%;
+	margin: 0px auto;
+	background: #FDFDFD url(../img/bg.jpg) repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+a:link, a:active, a:visited{
+	color: #649EBF;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:visited:hover{
+	color: #4B5056;
+	text-decoration: none;
+	outline: none;
+}
+
+a.img:link, a.img:active, a.img:visited, a.img:hover, a.img:visited:hover{
+	border: none;
+	outline: none;
+}
+.topLine{
+            background-image: url(../img/headBlue.jpg) ;
+            background-repeat:repeat-x;
+            height:10px;
+}
+#center{
+	width: 90%;
+	height:430px;
+	margin: 10px auto 100px;
+	
+	
+	
+}
+#center-left{
+	
+	width:40%;
+	height:420px;
+	float:left;
+
+	
+}
+#center-right{
+	width:60%;
+	height:420px;
+	float:right;
+}
+#login{
+    margin:20px 10px 10px 10px;
+    background-color: white;
+    width:380px;
+    height:350px;
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+    padding: 10px 10px 10px 10px;	
+}
+#form{
+  font-size: 22px;
+  color: gray;
+  margin-top: 30px;	
+}
+.btn{
+	background-color: gray;
+	color:white;
+}
+.btn:HOVER {
+	background-color: black;
+	color:white;
+}
+

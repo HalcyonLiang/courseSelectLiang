@@ -1,0 +1,46 @@
+		body { 
+    		margin: 0 0; 
+    		padding: 0 0;
+    		overflow-x:hidden;
+    	}
+    	.youce{
+    		position: absolute;
+    		width: 50px;
+    		height:50px;
+    		right:0%;
+    		line-height:50px;
+    		background-color: #333;	
+    		cursor: pointer;
+    		text-align: center;
+    		filter:alpha(Opacity=90);
+    		-moz-opacity:0.9;
+    		opacity: 0.9; 
+    	}
+    	#chapterContext{
+			top: 112px;
+			height: 562px;
+    		position: absolute;
+    		width: 20%;
+    		right:-20%;
+    		background-color:#333;
+    		text-align: left; 
+    		filter:alpha(Opacity=90);
+    		-moz-opacity:0.9;
+    		opacity: 0.9; 
+    		overflow: hidden;
+    		overflow-y: auto;   		  		
+    	}
+    	#chapterContext li{color: white;font-size: 20px;margin-top: 15px;}
+    	#chapterContext .icon{cursor: pointer;}
+    	#chapterContext ul{list-style-type: none;}
+    	.youce:HOVER{background-color: #f30;}
+    	.red{background-color: #f30;}
+    	.center{
+    		position:absolute;
+    		width: 50%;
+    		height: 40%;
+    		left: 25%;
+    		top: 30%;
+    		background-color: white;
+    		display: none;
+    	}

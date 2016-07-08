@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>play</title>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <!--你自己的样式文件 -->
+    <!--网页标签icon-->
+    <!--<link rel="shortcut icon" href="img/favicon.ico">-->
+    <link href="../CSS/jtpo-play.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/saved_resource.css" type="text/css">
+    <script type="text/javascript" src="../JWPlayer/jwplayer.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#showbar").click(function(){
+
+            jwplayer().getPlugin("controlbar").show();
+        });
+        $("#hidebar").click(function(){
+
+            jwplayer().getPlugin("controlbar").hide();
+        });
+
+        $("#fullscreen").click(function(){
+            alert(jwplayer().getFullscreen());
+            jwplayer().setFullscreen(true);
+            alert(jwplayer().getFullscreen());
+            jwplayer(0).setFullscreen(true);
+        });
+    });
+    </script>
+    <script type="text/javascript">
+        function download(){
+            var url = "http://210.30.96.51/jlpt/download.do?f=../";
+            var obj = document.getElementById('download');
+            window.self.location.href = url;
+        }
+    </script>
+</head>
+<body>
+<div id="header" class="navbar" style="margin-bottom: 0px;">
+    <div class="page-container" id="nav">
+        <div class="navbar-header">
+            <!-- ======= LOGO ========-->
+            <a class="navbar-brand" href="#home" style="color: #ffffff;margin-top: 5px;margin-left: -10px;padding: 0 0"><img src="../img/logo.png" width="140"></a>
+        </div>
+        <ul class="nav-item l">
+            <li><a href="http://www.imooc.com/space/course" target="_self">个人资料</a></li>
+            <li><a href="http://www.imooc.com/course/list" target="_self">课程中心</a></li>
+            <li><a href="http://www.imooc.com/wenda" target="_self">我的收藏</a></li>
+            <li><a href="http://www.imooc.com/space/course" target="_self">我的课程</a></li>
+        </ul>
+        <div id="login-area">
+            <ul class="clearfix logined">
+                <li class="my_message">
+                    <a href="" title="我的消息" target="_self">
+                        <i class="msg_icon" style="display: none;">3</i>
+                        <span style="display: none;">我的消息</span>
+                    </a>
+                </li>
+                <li class="my_mp" title="我的经验">
+                    <a target="_self">
+                        <span class="mp">经验</span>
+                        <span class="mp_num">1160</span>
+                    </a>
+
+                </li>
+                <li class="set_btn">
+                    <a id="header-avator" action-type="my_menu" href="http://www.imooc.com/space/index" target="_self" class=""><img src="../image/psb.jpg" width="40" height="40">
+                        <i class="myspace_remind" style="display: none;"></i>
+                        <span style="display: none;">动态提醒</span>
+                    </a>
+                    <ul id="nav_list" style="display: none;">
+                        <li><a id="my_space" href="http://www.imooc.com/space/index" title="charming_" class="text-ellipsis" target="_self">charming_</a></li>
+                        <li><a id="my_setting" href="http://www.imooc.com/user/userinfo" target="_self">我的设置</a></li>
+                        <li><a id="my_logout" href="http://www.imooc.com/user/logout" target="_self">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="title">
+                <h2 style="float: left;margin-top: 20px" >C3魔方少女</h2>
+            </div>
+            <div id="content">
+                <div id="player">
+                    <div id="container" style="height: 560px;width: 960px;background-color: #000000">
+                        <label style="color: #FFFFFF;line-height: 560px">Loading the player...</label>
+                    </div>
+                    <script type="text/javascript">
+                        function play(url) {
+                            var fileUrl = url;
+                            var thePlayer = jwplayer("container").setup({
+                                flashplayer: "JWPlayer/player.swf",
+                                autostart: true,
+                                height: 560,
+                                width: 960,
+                                file: fileUrl,
+                                // plugins: {sharing: { link: false }},
+                                image: "",
+                                provider: "http"
+                            });
+                        };
+//                        $(document).keydown(function(e){
+//                            if(!e) var e = window.event;
+//                            if(e.keyCode == 32){
+//                                if(thePlayer.getState() != 'PLAYING'){
+//                                    thePlayer.play(true);
+//                                }
+//                                else{
+//                                    thePlayer.play(false);
+//                                }
+//                            }
+//                        })
+//                        jwplayer().getPlugin("controlbar").hide();
+                    </script>
+                    <script type="text/javascript">window.onload = play("videos/1.mp4")</script>
+                </div>
+            </div>
+        </div>
+        <div class="rank" style="margin-top: 50px">
+            <div class="ranking" style="top: 0">
+                <div class="ranking-top">
+                    <h2 style="text-align: left;padding-left: 20px;">剧集列表</h2>
+                </div>
+                <div class="ranking-center">
+                    <div class="charts-list">
+                        <ul class="list">
+                            <li class="charts">
+                                <div class="charts-order">
+                                    <span class="charts-info-name user-head" onclick="play('videos/1.mp4')">第一集</span>
+                                </div>
+                            </li>
+                            <li class="charts">
+                                <div class="charts-order">
+                                    <span class="charts-info-name user-head" onclick="play('videos/2.mp4')">第二集</span>
+                                </div>
+                            </li>
+                            <li class="charts">
+                                <div class="charts-order">
+                                    <span class="charts-info-name user-head" onclick="play('videos/3.mp4')">第三集</span>
+                                </div>
+                            </li>
+                            <li class="charts">
+                                <div class="charts-order">
+                                    <span class="charts-info-name user-head" onclick="play('videos/4.mp4')">第四集</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </div>
+</div>
+<div id="footer">
+    <p>本站所有视频均来自网络，仅限学术研究，请勿用于商业用途</p>
+    <p>© Copyright 2014&nbsp;|&nbsp; 大连理工大学软件学院</p>
+</div>
+</body>
+</html>
